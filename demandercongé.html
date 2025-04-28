@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire de demande de congé</title>
+    <link rel="stylesheet" href="demandercongé.css">
+    <script src="demandercongé.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logos">
+            <img src="" alt="logo isimm">
+            <div class="titre">
+                <p>RÉPUBLIQUE TUNISIENNE<br>
+                    MINISTÈRE DE L’ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE<br>
+                    UNIVERSITÉ DE MONASTIR<br>
+                    INSTITUT SUPÉRIEUR D’INFORMATIQUE ET DE MATHÉMATIQUES DE MONASTIR<br>
+                    DÉPARTEMENT INFORMATIQUE</p>
+            </div>
+            <img src="" alt="université de monastir">
+        </div>
+    </header>
+
+    <main>
+        <h2> Formulaire de demande de congé</h2>
+        <section class="informations-demandeur">
+            <h3> Informations de demandeur</h3>
+            <form>
+                <div class="ligne">
+                    <label for="identifiant"> Identifiant:</label>
+                    <input type="number" id="identifiant" name="identifiant" placeholder="Identifiant">
+                    
+                    <label for="nom"> Nom et Prénom:</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom et Prénom">
+                </div>
+
+                <div class="ligne">
+                    <label for="departement">Département:</label>
+                    <input type="text" id="departement" name="departement" placeholder="Département">
+
+                    <label for="poste">Poste:</label>
+                    <input type="text" id="poste" name="poste" placeholder="Poste">
+                </div>
+
+                <div class="ligne">
+                    <label for="Email" > Email:</label>
+                    <input type="email" id="email" name="Email" placeholder="Email">
+
+                    <label for="number">Téléphone :</label>
+                    <input type="number" id="numero" name="number" placeholder="Téléphone">
+                </div>
+                <div class="ligne">
+
+                    <label for="adresse">Adresse:</label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Adresse">
+
+                    <label for="code postal">Code postal</label>
+                    <input type="text" id="code postal" name="code postal" placeholder="Code postal">
+                </div>
+
+
+                <h3> Détails de la demande</h3>
+                <div class="type-conge">
+                    <label>Type de congé:</label><br>
+                    <input type="checkbox" id="annuel" name="type_conge" value="annuel">
+                    <label for="annuel">Congé annuel payé</label>
+
+                    <input type="checkbox" id="exceptionnel" name="type_conge" value="exceptionnel">
+                    <label for="exceptionnel">Congé exceptionnel</label>
+                    <br>
+
+                    <input type="checkbox" id="maladie" name="type_conge" value="maladie">
+                    <label for="maladie">Congé de maladie</label>
+
+                    <input type="checkbox" id="compensatoire" name="type_conge" value="compensatoire">
+                    <label for="compensatoire">Congé compensatoire</label>
+                </div>
+
+
+
+                <div id="details-maladie" style="display: none;
+                align-items: center;
+                gap: 10px;
+                margin: 15px 0;
+                margin-top: 10px;" >
+                    <label>Précisez le type de maladie :</label><br>
+                    <input type="checkbox" id="maladie1" name="detail_maladie" value="maladie" style="margin-right: 5px;" >
+                    <label for="maladie" style="margin-right: 10px;" >Maladie</label>
+                
+                    <input type="checkbox" id="maternite1" name="detail_maladie" value="maternite" style="margin-right: 5px;" >
+                    <label for="maternite" style="margin-right: 10px;" >Maternité</label>
+                
+                    <input type="checkbox" id="accouchement1" name="detail_maladie" value="accouchement" style="margin-right: 5px;">
+                    <label for="accouchement" style="margin-right: 10px;" >Accouchement</label>
+                
+                    <br><br>
+                    <label for="fichier-certificat" style="margin-right: 10px;" >Joindre un certificat médical :</label><br>
+                    <input type="file" id="fichier-certificat" name="fichier_certificat" style=" margin-top: 8px;">
+                </div>
+
+                <div id="details-exceptionnel" style="display: none; margin-top: 10px;">
+                    <label for="motif-exceptionnel">Motif du congé exceptionnel :</label><br>
+                    <input type="text" id="motif-exceptionnel" name="motif_exceptionnel" placeholder="Indiquez la raison...">
+                </div>
+
+
+                <div class="ligne">
+                    <label for="date_debut">Date début:</label>
+                    <input type="date" id="date_debut" name="date_debut">
+
+                    <label for="date_fin">Date fin:</label>
+                    <input type="date" id="date_fin" name="date_fin">
+                </div>
+
+                <div class="confirmation">
+                    <input type="checkbox" id="confirmation" name="confirmation">
+                    <label for="confirmation">Je comprends que cette demande est soumise à une approbation.</label>
+                </div>
+
+                <div class="remarques">
+                    <!-- <label for="remarques">Autres remarques:</label><br> -->
+                    <textarea id="remarques" name="remarques" rows="4" cols="50" placeholder="Autres remarques"></textarea>
+                </div>
+
+                <div class="bouton">
+                    <button type="submit">Soumettre demande</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>

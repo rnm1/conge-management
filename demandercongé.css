@@ -1,0 +1,106 @@
+body
+{
+    font-family: Arial,  sans-serif;
+    background-color: #d9e6f0;
+    margin:0;
+    padding: 0;
+}
+header 
+{
+    text-align: center;
+    padding: 20px;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titre {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+}
+
+main{
+    margin: 20px auto ;
+    padding: 20px;
+    width: 80%;
+    border: 8px;
+
+
+}
+
+h2 {
+    text-align: center;
+    color:black ;
+    background-color: #588ec3;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.ligne{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.ligne label {
+    width: 10%;
+}
+
+.ligne input {
+    width: 30%;
+}
+
+.type-conge{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.type-conge label {
+    margin-right: 10px;
+
+}
+.types-conge input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+
+
+
+#details-maladie input[type="checkbox"],
+#details-maladie input[type="file"] {
+    cursor: pointer;
+}
+
+
+
+
+.confirmation {
+    margin: 20px 0;
+}
+
+.bouton {
+    text-align: right;
+    margin-top: 20px;
+}
+ button {
+    background-color:#3366cc ;
+    color: white;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 20px;
+    cursor: pointer;
+ }
+
+ button:hover {
+    background-color: #254b8b;
+ }
